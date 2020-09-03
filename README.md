@@ -57,7 +57,7 @@ npm run test
 
 4. Test the performance
 ```
-npm run start
+npm run benchmark
 ```
 
 5. You could submit your pull request and ask for review and discussion before the official answer release.

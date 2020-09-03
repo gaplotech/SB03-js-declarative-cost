@@ -4,8 +4,9 @@
   "description": "【技術躍升系列】SB03 javascript declarative cost",
   "main": "src/perf.js",
   "scripts": {
-    "start": "node src/perf.js",
-    "test": "jest"
+    "start": "jest",
+    "test": "jest",
+    "benchmark": "node src/perf.js"
   },
   "author": "",
   "license": "ISC",

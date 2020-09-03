@@ -2,5 +2,5 @@
   "infiniteLoopProtection": false,
   "template": "node",
   "view": "console",
-  "startScript": "test"
+  "startScript": "start"
 }
