@@ -68,3 +68,10 @@ npm run benchmark
 
 5. You could submit your pull request and ask for review and discussion before the
    official answer release.
+
+## Answer
+
+<details>
+  <summary>Check Answers</summary>
+https://github.com/gaplotech/skill-boost-plan/pull/4
+</details>
