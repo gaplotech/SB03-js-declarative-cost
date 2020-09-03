@@ -73,5 +73,8 @@ npm run benchmark
 
 <details>
   <summary>Check Answers</summary>
-https://github.com/gaplotech/skill-boost-plan/pull/4
+
+[Early Access - JS Benchmark in 20 different implementations for same purpose](https://www.patreon.com/posts/41204692)
+Answer will be posted on the upcoming Monday.
+
 </details>
