@@ -17,7 +17,7 @@ const someTransform = ({ someNum }) => number | null
 const someCalculation = number => number
 ```
 
-The possible size of `arr` are in `{1, 10, 100, 1000, 10000, 100000, 1000000}`.
+The possible `arr` sizes are in `{1, 10, 100, 1000, 10000, 100000, 1000000}`.
 
 Computational Tasks(order is important):
 
@@ -66,8 +66,8 @@ npm run test
 npm run benchmark
 ```
 
-5. You could submit your pull request and ask for review and discussion before the
-   official answer release.
+5. You could submit your pull request and ask for review and discuss before the official
+   answer release.
 
 ## Answer
 

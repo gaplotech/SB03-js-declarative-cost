@@ -21,18 +21,31 @@ const { someTransform, someCalculation } = require('./common')
  *   5. calculate the sum of the values
  *   6. return the total sum
  *
- * You may assume the possible size of array are in {1, 10, 100, 1000, 10000, 100000, 1000000}.
+ * The possible `arr` sizes are in `{1, 10, 100, 1000, 10000, 100000, 1000000}`.
  *
- * You are suggested to develop two version that
- *   1. the implementation is the "fastest" way to finish the tasks.
+ * Computational Tasks(order is important):
  *
- *   2. use functional approach to is written in "declarative" style that is relatively
- *   simpler to understand, debug and trace.
+ * 1.  apply a black-box function `someTransform` on each value in `arr`
+ * 2.  remove null values in `arr`
+ * 3.  remove duplicate values in `arr`
+ * 4.  apply a black-box function `someCalculation` on each value in `arr`
+ * 5.  calculate the sum of the values
+ * 6.  return the total sum
  *
- *   3. Optimization often requires a trade-off. Try to sacrifice some of the
- *   readability to optimize the performance while maintain the declarative style
- *   of the implementation written in 2.
+ * ---
  *
+ * For a pure learning purpose, you are suggested to develop three versions:
+ *
+ * 1. A "fastest" version to compute all the tasks.
+ *
+ * 2. A "declarative" style version that is the simplest to understand, debug and trace.
+ * (functional approach)
+ *
+ * 3. Based on 2, try to optimize 2 to a faster "declarative" style implementation.
+ *
+ * P.S. Optimization often requires a trade-off but try to sacrifice as little as possible to
+ * optimize the performance and maintain the simplicity. You could use any js library to
+ * complete those implementations.
  */
 
 /**
@@ -50,7 +63,6 @@ function declarative(arr) {
   // TODO: declarative implementation
   return null
 }
-
 
 /**
  * An optimized declarative implementation in a trade-off of readability
