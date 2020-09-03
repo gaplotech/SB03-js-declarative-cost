@@ -1,6 +1,6 @@
 {
-  "infiniteLoopProtection": false,
+  "infiniteLoopProtection": true,
   "template": "node",
-  "view": "console",
+  "view": "terminal",
   "startScript": "start"
 }
