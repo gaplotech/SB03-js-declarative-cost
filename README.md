@@ -33,7 +33,7 @@ const someCalculation = number => number
 
 The possible `arr` sizes are in `{1, 10, 100, 1000, 10000, 100000, 1000000}`.
 
-Computational Tasks(order is important):
+#### Computational Tasks(order is important):
 
 1.  apply a black-box function `someTransform` on each value in `arr`
 2.  remove null values in `arr`
@@ -89,10 +89,10 @@ yarn test
 4. Test the performance
 
 ```
-# roughly
+# roughly, shorter iteration and small samples
 yarn benchmark:rough
 
-# precisely
+# precisely, minimum 200 samples
 yarn benchmark:precise
 ```
 
@@ -104,8 +104,23 @@ yarn benchmark:precise
 <details>
   <summary>Check Answers</summary>
 
-[Early Access - JS Benchmark in 20 different implementations for same purpose](https://www.patreon.com/posts/41204692)
+A short answer and conclusion will be posted on 7/Sep 2020.
 
-Answer will be posted on the upcoming Monday.
+If you have no time to complete this exercise, you could read my comprehensive R&D
+findings(implemented 20 versions) via patreon.
+
+In order to get an accurate result, we need a good benchmark environment.
+
+An ideal benchmark environment requires a machine that has no workload and no performance
+thermal throttling. That's why I have rented a
+[packet bare metal machine (t1.small.x86) in Tokyo](https://www.packet.com/cloud/servers/t1-small/)
+to perform the benchmark with minimum 1000 samples for each benchmark.
+
+As a result, the whole benchmark `1000 sample * 20 implementation * 7 size` takes 16.44
+hours to run! The final result combined with the source code provided in patreon is
+stunning and fascinating! It gives you a good insight between declarative style,
+performance and functional optimization techniques in js.
+
+[Early Access - JS Benchmark in 20 different implementations for same purpose](https://www.patreon.com/posts/41204692)
 
 </details>
