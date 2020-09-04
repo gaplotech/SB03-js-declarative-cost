@@ -4,8 +4,8 @@
   "description": "【技術躍升系列】SB03 javascript declarative cost",
   "main": "src/perf.js",
   "scripts": {
-    "start": "jest",
-    "test": "jest",
+    "start": "jest --noStackTrace",
+    "test": "jest --noStackTrace",
     "benchmark:rough": "PRECISE_MODE=0 node src/perf.js",
     "benchmark:precise": "PRECISE_MODE=1 node src/perf.js"
   },
