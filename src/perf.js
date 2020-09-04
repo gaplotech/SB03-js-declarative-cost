@@ -2,17 +2,22 @@ const Benchmark = require('benchmark')
 const { fastest, declarative, declarativeOptimized } = require('./perf-impl')
 const { createArr } = require('./common')
 
-Benchmark.options.initCount = 1
-
 // you can increase this for better precision
-Benchmark.options.minSamples = 5
+if (process.env.PRECISE_MODE === '1') {
+  Benchmark.options.initCount = 10
+  Benchmark.options.minSamples = 200
+} else {
+  Benchmark.options.initCount = 1
+  Benchmark.options.minSamples = 5
+  Benchmark.options.maxTime = 2
+}
 
 async function main() {
   for (const size of [1, 10, 100, 1000, 10000, 100000, 1000000]) {
     // assert the answer is correct before running the benchmark
     const arr = createArr(size)
 
-    await new Promise((resolve) => {
+    await new Promise(resolve => {
       const suite = new Benchmark.Suite(`Standard Array Processing (size=${size})`)
       suite
         .add('fastest', function () {

@@ -6,7 +6,8 @@
   "scripts": {
     "start": "jest",
     "test": "jest",
-    "benchmark": "node src/perf.js"
+    "benchmark:rough": "PRECISE_MODE=0 node src/perf.js",
+    "benchmark:precise": "PRECISE_MODE=1 node src/perf.js"
   },
   "author": "",
   "license": "ISC",

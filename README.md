@@ -6,13 +6,13 @@ Understand the performance of writing a declarative style coding in js.
 
 Completing this exercise could help you to figure out the following questions:
 
-1. Do you know the trade-off of writing a functional implementation in js?
+- Do you know the trade-off of writing a functional implementation in js?
 
-2. Do you know how to write a fastest and super efficient implementation in js?
+- Do you know how to write a fastest and super efficient implementation in js?
 
-3. Do you know the js libraries you used every day added how much overhead?
+- Do you know the js libraries you used every day added how much overhead?
 
-4. Is optimizing a functional implementation worth trying in js?
+- Is optimizing a functional implementation worth trying in js?
 
 ## Exercise Details
 
@@ -89,7 +89,11 @@ yarn test
 4. Test the performance
 
 ```
-yarn benchmark
+# roughly
+yarn benchmark:rough
+
+# precisely
+yarn benchmark:precise
 ```
 
 5. You could submit your pull request and ask for review and discuss before the official
@@ -101,6 +105,7 @@ yarn benchmark
   <summary>Check Answers</summary>
 
 [Early Access - JS Benchmark in 20 different implementations for same purpose](https://www.patreon.com/posts/41204692)
+
 Answer will be posted on the upcoming Monday.
 
 </details>
