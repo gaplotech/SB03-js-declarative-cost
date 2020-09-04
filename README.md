@@ -106,14 +106,14 @@ yarn benchmark:precise
 
 A short answer and conclusion will be posted on 7/Sep 2020.
 
-If you have no time to complete this exercise, you could read my comprehensive R&D
-findings(implemented 20 versions) via patreon.
+(TLDR;) If you have no time to complete this exercise, you could read my comprehensive
+[R&D findings(implemented 20 versions)](https://www.patreon.com/posts/41204692) via
+patreon.
 
-In order to get an accurate result, we need a good benchmark environment.
-
-An ideal benchmark environment requires a machine that has no workload and no performance
-thermal throttling. That's why I have rented a
-[packet bare metal machine (t1.small.x86) in Tokyo](https://www.packet.com/cloud/servers/t1-small/)
+In order to get an accurate benchmark, we need to make sure the benchmark environment has
+no significant workload, no performance thermal throttling and no affection with noisy
+neighbour(if VM). That's why I have rented a
+[packet bare metal machine (t1.small.x86) in NTR](https://www.packet.com/cloud/servers/t1-small/)
 to perform the benchmark with minimum 1000 samples for each benchmark.
 
 As a result, the whole benchmark `1000 sample * 20 implementation * 7 size` takes 16.44
@@ -122,5 +122,9 @@ stunning and fascinating! It gives you a good insight between declarative style,
 performance and functional optimization techniques in js.
 
 [Early Access - JS Benchmark in 20 different implementations for same purpose](https://www.patreon.com/posts/41204692)
+
+#### Sneak Peek
+
+![sneak peek](js-benchmark-sneak-peek.jpg)
 
 </details>
