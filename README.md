@@ -117,9 +117,10 @@ neighbour(if VM). That's why I have rented a
 to perform the benchmark with minimum 1000 samples for each benchmark.
 
 As a result, the whole benchmark `1000 sample * 20 implementation * 7 size` takes 16.44
-hours to run! The final result combined with the source code provided in patreon is
-stunning and fascinating! It gives you a good insight between declarative style,
-performance and functional optimization techniques in js.
+hours to run! The final result is stunning and fascinating! Combined with the source code
+provided in patreon, it is a good insight for you to make decision in javascript
+development between declarative style and performance, also the functional optimization
+techniques.
 
 [Early Access - JS Benchmark in 20 different implementations for same purpose](https://www.patreon.com/posts/41204692)
 
