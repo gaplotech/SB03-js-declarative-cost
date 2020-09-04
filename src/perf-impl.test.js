@@ -1,19 +1,21 @@
 const { fastest, declarative, declarativeOptimized } = require('./perf-impl')
 const { answers, createArr } = require('./common')
+const each = require('jest-each').default
 
-for (const size of [1, 10, 100, 1000, 10000, 100000, 1000000]) {
-  describe(`test when arrSize=${size}`, () => {
-    const arr = createArr(size)
-    test('fastest', () => {
-      expect(fastest(arr)).toBe(answers[`_${size}`])
-    })
+const sizes = [1, 10, 100, 1000, 10000, 100000, 1000000]
+const sizesWithAns = sizes.map(it => [it, answers[`_${it}`]])
 
-    test('declarative', () => {
-      expect(declarative(arr)).toBe(answers[`_${size}`])
-    })
+each(sizesWithAns).test('fastest when array size=%d', (size, expected) => {
+  const arr = createArr(size)
+  expect(fastest(arr)).toBe(expected)
+})
 
-    test('declarativeOptimized', () => {
-      expect(declarativeOptimized(arr)).toBe(answers[`_${size}`])
-    })
-  })
-}
+each(sizesWithAns).test('declarative when array size=%d', (size, expected) => {
+  const arr = createArr(size)
+  expect(declarative(arr)).toBe(expected)
+})
+
+each(sizesWithAns).test('declarativeOptimized when array size=%d', (size, expected) => {
+  const arr = createArr(size)
+  expect(declarativeOptimized(arr)).toBe(expected)
+})
