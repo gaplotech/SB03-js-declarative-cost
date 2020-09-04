@@ -1,6 +1,20 @@
 【Skill Boost Plan】SB03 javascript declarative cost
 
-## Question
+## Purpose
+
+Understand the performance of writing a declarative style coding in js.
+
+Completing this exercise could help you to figure out the following questions:
+
+1. Do you know the trade-off of writing a functional implementation in js?
+
+2. Do you know how to write a fastest and super efficient implementation in js?
+
+3. Do you know the js libraries you used every day added how much overhead?
+
+4. Is optimizing a functional implementation worth trying in js?
+
+## Exercise Details
 
 Given that, there are two black-box functions and one array with the following
 declarations,
@@ -43,13 +57,25 @@ P.S. Optimization often requires a trade-off but try to sacrifice as little as p
 optimize the performance and maintain the simplicity. You could use any js library to
 complete those implementations.
 
+#### Learning Bonus
+
+1. If you used vanilla javascript for those implementations, try to use famous libraries
+   like `lodash` and `ramda` to implement and benchmark in ALL array sizes again.
+
+2. If you used `lodash` or `ramda` for those implementations, try to use vanilla
+   javascript to implement and benchmark in ALL array sizes again.
+
+3. If you think a lazy evaluation is an important feature in general. Try to use vanilla
+   javascript to implement with
+   [iterator pattern](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#Iterators).
+
 ## Getting Start
 
 1. Clone this project and install npm modules
 
 ```
 git clone https://github.com/gaplotech/SB03-js-declarative-cost
-npm install
+yarn install
 ```
 
 2. Complete your implementation in `src/perf-impl.js`
@@ -57,13 +83,13 @@ npm install
 3. Test your implementation correctness
 
 ```
-npm run test
+yarn test
 ```
 
 4. Test the performance
 
 ```
-npm run benchmark
+yarn benchmark
 ```
 
 5. You could submit your pull request and ask for review and discuss before the official

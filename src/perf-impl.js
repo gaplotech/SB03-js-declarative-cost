@@ -1,7 +1,6 @@
 const { someTransform, someCalculation } = require('./common')
 
 /**
- * Question:
  * Given that, there are one array and two black-box functions with the following declaration,
  * ```
  * const arr = [{
