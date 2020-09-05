@@ -104,28 +104,28 @@ yarn benchmark:precise
 <details>
   <summary>Check Answers</summary>
 
-A short answer and conclusion will be posted on 7/Sep 2020.
+**A short answer and conclusion will be posted on 7/Sep 2020.**
 
-(TLDR;) If you have no time to complete this exercise, you could read my comprehensive
+**(TLDR;)** If you have no time to complete this exercise, you could read my comprehensive
 [R&D findings(implemented 20 versions)](https://www.patreon.com/posts/41204692) via
-patreon.
-
-In order to get an accurate benchmark, we need to make sure the benchmark environment has
-no significant workload, no performance thermal throttling and no affection with noisy
-neighbour(if VM). That's why I have rented a
-[packet bare metal machine (t1.small.x86) in NTR](https://www.packet.com/cloud/servers/t1-small/)
-to perform the benchmark with minimum 1000 samples for each benchmark.
-
-As a result, the whole benchmark `1000 sample * 20 implementation * 7 size` takes 16.44
-hours to run! The final result is stunning and fascinating! Combined with the source code
-provided in patreon, it is a good insight for you to make decision in javascript
-development between declarative style and performance, also the functional optimization
-techniques.
-
-[Early Access - JS Benchmark in 20 different implementations for same purpose](https://www.patreon.com/posts/41204692)
+Patreon.
 
 #### Sneak Peek
 
 ![sneak peek](js-benchmark-sneak-peek.jpg)
+
+To get an accurate benchmark, we need to make sure the benchmark environment has no
+significant workload, no performance thermal throttling, and no affection with noisy
+neighbour(if VM). That's why I have rented a
+[packet bare metal machine (t1.small.x86) in NTR](https://www.packet.com/cloud/servers/t1-small/)
+to perform the benchmark with a minimum 1000 samples for each benchmark.
+
+As a result, the whole benchmark `1000 sample * 20 implementations * 7 sizes` takes 16.44
+hours to run! The final result is stunning and fascinating! Combined with the source code
+provided in Patreon, it is a good insight into declarative style, performance, and
+functional optimizations techniques. It helps you to make a better development decision to
+solve different challenges.
+
+[Early Access - JS Benchmark in 20 different implementations for same purpose](https://www.patreon.com/posts/41204692)
 
 </details>
